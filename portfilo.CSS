@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #18234a;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5%;
+    background: white;
+    flex-wrap: wrap;
+}
+
+nav h2 {
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #18234a;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2864e8;
+}
+
+/* Home */
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 55px 10%;
+    background: #e5e7ff;
+    gap: 30px;
+}
+
+.home h1 {
+    font-size: 30px;
+}
+
+.home h2 {
+    color: #555ac5;
+    margin: 10px 0;
+}
+
+.home p {
+    margin-bottom: 25px;
+}
+
+.home img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn {
+    background: #2864e8;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #18234a;
+}
+
+/* About */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10%;
+    gap: 30px;
+}
+
+.about h2,
+section h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin: 12px 0;
+}
+
+.about img {
+    width: 35%;
+    border-radius: 10px;
+}
+
+/* Skills */
+.skills {
+    background: #eeeeff;
+    padding: 35px 10%;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+    border-radius: 10px;
+    color: #2864e8;
+    font-size: 25px;
+}
+
+.skill p {
+    font-size: 13px;
+    color: #18234a;
+    margin-top: 10px;
+}
+
+.skill:hover {
+    background: #dce4ff;
+}
+
+/* Projects */
+.projects {
+    padding: 35px 10%;
+}
+
+.project-box {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #d5d9ed;
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.project img {
+    width: 100px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.project h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.project a {
+    color: #2864e8;
+    text-decoration: none;
+    border: 1px solid #2864e8;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+.project a:hover {
+    background: #2864e8;
+    color: white;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 10%;
+    background: #eeeeff;
+    gap: 30px;
+}
+
+.contact p {
+    margin: 15px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 55%;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    height: 80px;
+}
+
+button {
+    background: #2864e8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #18234a;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #18234a;
+    color: white;
+    padding: 25px 5%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+
+footer a:hover {
+    color: #8daaff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav div {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .home,
+    .about,
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .skill-box {
+        justify-content: center;
+    }
+
+    .project-box {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
